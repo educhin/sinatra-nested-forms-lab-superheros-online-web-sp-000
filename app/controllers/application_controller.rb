@@ -24,12 +24,12 @@ class App < Sinatra::Base
     @hero_1_name = params[:team][:heros][0][:name]
     @hero_1_power = params[:team][:heros][0][:power]
     @hero_1_bio = params[:team][:heros][0][:bio]
-    @hero_2_name = params[:team][:heros][0][:name]
-    @hero_2_power = params[:team][:heros][0][:power]
-    @hero_2_bio = params[:team][:heros][0][:bio]
-    @hero_3_name = params[:team][:heros][0][:name]
-    @hero_3_power = params[:team][:heros][0][:power]
-    @hero_3_bio = params[:team][:heros][0][:bio]
+    @hero_2_name = params[:team][:heros][1][:name]
+    @hero_2_power = params[:team][:heros][1][:power]
+    @hero_2_bio = params[:team][:heros][1][:bio]
+    @hero_3_name = params[:team][:heros][2][:name]
+    @hero_3_power = params[:team][:heros][2][:power]
+    @hero_3_bio = params[:team][:heros][2][:bio]
     erb :team
   end
 end
