@@ -21,6 +21,15 @@ class App < Sinatra::Base
     # @heros = Hero.all
     @team_name = params[:team][:name]
     @team_motto = params[:team][:motto]
+    @hero_1_name = params[:team][:heros][0]["name"]
+    @hero_1_power = params[:team][:heros][0]["power"]
+    @hero_1_bio = params[:team][:heros][0]["bio"]
+    @hero_2_name = params[:team][:heros][0]["name"]
+    @hero_2_power = params[:team][:heros][0]["power"]
+    @hero_2_bio = params[:team][:heros][0]["bio"]
+    @hero_3_name = params[:team][:heros][0]["name"]
+    @hero_3_power = params[:team][:heros][0]["power"]
+    @hero_3_bio = params[:team][:heros][0]["bio"]
     erb :team
   end
 end
