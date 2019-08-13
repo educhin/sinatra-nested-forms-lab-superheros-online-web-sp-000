@@ -1,7 +1,7 @@
 
-require_relative 'config/environment'
-require_relative 'models/hero.rb'
-require_relative 'models/team.rb'
+# require_relative 'config/environment'
+# require_relative 'models/hero.rb'
+# require_relative 'models/team.rb'
 require 'sinatra/base'
 
 class App < Sinatra::Base
@@ -20,7 +20,7 @@ class App < Sinatra::Base
     # end
     # @heros = Hero.all
     @team_name = params[:team][:name]
-    
+
     erb :team
   end
 end
