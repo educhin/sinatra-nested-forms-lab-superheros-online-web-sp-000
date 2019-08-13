@@ -1,7 +1,7 @@
 require 'sinatra/base'
-# require_relative 'config/environment'
-# require_relative 'models/hero.rb'
-# require_relative 'models/team.rb'
+require_relative 'config/environment'
+require_relative 'models/hero.rb'
+require_relative 'models/team.rb'
 
 
 class App < Sinatra::Base
